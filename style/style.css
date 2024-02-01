@@ -3,3 +3,90 @@
     margin: 0;
     padding: 0;
 }
+
+nav {
+    background-color: #242424;
+    height: 5rem;
+    width: 100%;
+    color: #4ed096;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* Styling for the Navbar */
+
+nav img {
+height: 2rem;
+width: 2rem;
+margin-left: 75rem;
+}
+
+nav div {
+    height: 100%;
+}
+
+.nav-link-1, .nav-link-2{
+color: inherit;
+text-decoration: none;
+height: 100%;
+}
+
+.nav-link-2{
+    color: white;
+}
+
+.nav-link-2:hover {
+    background-color: #4ed096;
+    color: #242424;
+    height: 100%;
+}
+
+.nav-link-1:hover {
+    background-color: #4ed096;
+    color: white;
+    height: 100%;
+}
+
+.nav-text-1 {
+    /* margin-left: 1rem; */
+    margin-right: 7rem;
+    text-decoration: none;
+    padding-left: 10px;
+    height: 5rem;
+    width: 12rem;
+
+}
+
+.nav-text-2 {
+    /* margin-left: 1rem; */
+    margin-right: 7rem;
+    text-decoration: none;
+    height: 5rem;
+    width: 6rem;
+
+}
+
+.nav-text-1, .nav-text-2 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%;
+}
+
+
+.navbar-settings {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+  }
