@@ -15,6 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 nav:hover {
@@ -112,17 +113,80 @@ background-image: url("../assest/background_straight.svg");
 background-size: cover;
 filter: hue-rotate(0deg) saturate(2) brightness(1) contrast(1);
 
+overflow: hidden;
 /* transform: rotateX(180deg); */
 }
 
-#settings-bar{
+
+/* Styling for the setting */
+
+.settings-bar{
     position: absolute;
     height: 76rem;
     width: 25rem;
     background-color: rgb(47, 244, 155);
-    border: 1px solid white;
+    border-left: 1px solid white;
     z-index: 10;
     position: absolute;
     top: -1rem;
-    right: -05rem;
+    right: -27rem;
 }
+
+.settings-bar-1{
+    position: absolute;
+    height: 76rem;
+    width: 25rem;
+    background-color: rgb(47, 244, 155);
+    border-left: 1px solid white;
+    z-index: 10;
+    position: absolute;
+    top: -1rem;
+    right: -5rem;
+    transition: all 0.3s ease 0s;
+}
+
+.close-button{
+    position: absolute;
+    top: 1rem;
+    font-weight: 800;
+    font-size: large;
+}
+
+.close-button-clicked{
+    position: absolute;
+    height: 76rem;
+    width: 25rem;
+    background-color: rgb(47, 244, 155);
+    border-left: 1px solid white;
+    z-index: 10;
+    position: absolute;
+    top: -1rem;
+    right: -27rem;
+    transition: all 0.3s ease 0s;
+}
+
+/* Styling of the bottom bar */
+
+.bottom-bar{
+    background-color: #242424;
+    height: 6.5rem;
+    width: 100%;
+    border-top: 2px #4ed096 solid;
+}
+
+.sorts-div{
+    height: 100%;
+    width: 10rem;
+    background-color: #424fff ;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sorts-div:hover{
+    background-color: #4ed096 ;
+    color: white;
+}
+
