@@ -109,7 +109,7 @@ height: 100%;
 .middle-container{
 
 background-color: #1b1a1a;
-height: 70rem;
+height: 70.5rem;
 width: 100%;
 /* display: flex;
 flex-direction: row;
@@ -137,6 +137,9 @@ overflow: hidden;
     position: absolute;
     top: -1rem;
     right: -27rem;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-behavior: ease;
 }
 
 .settings-bar-1{
@@ -149,7 +152,9 @@ overflow: hidden;
     position: absolute;
     top: -1rem;
     right: -5rem;
-    transition: all 0.3s ease 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-behavior: ease;
 }
 
 .close-button{
@@ -169,7 +174,9 @@ overflow: hidden;
     position: absolute;
     top: -1rem;
     right: -27rem;
-    transition: all 0.3s ease 0s;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-behavior: ease;
 }
 
 /* Styling of the bottom bar */
@@ -181,7 +188,7 @@ overflow: hidden;
     border-top: 2px #4ed096 solid;
 }
 
-.sorts-div{
+.text-in-sorts{
     height: 5rem;
     width: 10rem;
     background-color: #424fff ;
@@ -192,16 +199,17 @@ overflow: hidden;
     justify-content: center;
     position: absolute;
     left: 15rem;
-    bottom: 1.5rem;
+    bottom: 1.2rem;
     border-radius: 0.5rem;
-    font-size: larger;
-    font-weight: 800;
+    font-size: xx-large;
+    font-weight: 900;
     transition-duration: 0.5s;
     transition-property: all;
     transition-behavior: ease;
+    border: 1px white solid;
 }
 
-.sorts-div:hover{
+.text-in-sorts:hover{
     background-color: #4ed096 ;
     color: white;
 }
@@ -238,4 +246,135 @@ overflow: hidden;
     position: relative;
     left: 50rem;
     top: 1.2rem;
+}
+
+
+/* Details bar styling */
+
+.details-bar{
+    height: 14rem;
+    width: 10rem;
+    background-color: #424fff;
+    color: #fff;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 30rem;
+    left: -12rem;
+    
+    border: 2px white solid;
+
+    transition-duration: 0.8s;
+    transition-property: all;
+    transition-behavior: ease-out;
+}
+
+.details-bar2{
+    height: 14rem;
+    width: 10rem;
+    background-color: #424fff;
+    color: #fff;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 30rem;
+    left: -1rem;
+    
+    border: 2px white solid;
+
+    transition-duration: 0.8s;
+    transition-property: left;
+    transition-behavior: ease-in;
+}
+
+
+.details-bar2:hover{
+    height: 14rem;
+    width: 10rem;
+    background-color: #424fff;
+    color: #fff;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 30rem;
+    left: -1rem;
+    
+    border: 2px white solid;
+
+    font-size: larger;
+    font-weight: 700
+
+}
+
+
+
+.total-bars{
+    height: 7rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bars-height{
+    height: 7rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.details-button{
+    height: 5rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #424fff;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: 1px white solid;
+    position: absolute;
+    right: 10rem;
+    bottom: 1rem;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+
+.details-button:hover{
+    height: 5rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4ed096;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: 1px white solid;
+    position: absolute;
+    right: 10rem;
+    bottom: 1rem;
+    font-size: xx-large;
+    font-weight: 900;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-behavior: ease;
 }
