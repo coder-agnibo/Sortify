@@ -31,3 +31,57 @@ details.addEventListener("click", function() {
       detailsBar.classList.add("details-bar");
     }
   });
+
+
+  // Bars js
+
+
+  const barsContainer = document.querySelector(".bars-container");
+  const generateArray = document.querySelector(".nav-text-1");
+
+  let bars;
+
+  let maxBars = 150;
+
+  let maxHeight = 500;
+
+  let barWidth = 10;
+
+
+  generateArray.addEventListener("click", function createArray() {
+   
+    // clearing the container so that new array can be added
+    barsContainer.innerHTML = ''; 
+
+    // Declaring a new arrray
+    bars = new Array();
+
+
+    for(let i = 0; i < maxBars; i++) {
+      let bar = document.createElement("div");
+      
+      let randomHeight = Math.floor(Math.random() * maxHeight + 1);
+
+      bar.style.height = `${randomHeight}px`;;
+
+      bar.style.width = `${barWidth}px`;
+      
+      bar.style.backgroundColor = "#4ed096df";
+
+      bar.style.marginRight = "5px";
+
+      
+      bars.push(bar);
+
+    }
+
+    // console.log(bars);
+    bars.forEach(bar => barsContainer.appendChild(bar));
+  }
+  );
+
+
+
+
+
+

@@ -75,7 +75,6 @@ height: 100%;
     padding-left: 10px;
     height: 5rem;
     width: 12rem;
-
 }
 
 .nav-text-2 {
@@ -122,6 +121,19 @@ filter: hue-rotate(0deg) saturate(2) brightness(1) contrast(1);
 
 overflow: hidden;
 /* transform: rotateX(180deg); */
+}
+
+.bars-container {
+height: 70.5rem;
+width: 70%;
+
+display: flex;
+justify-content: center;
+align-items: end;
+position: relative;
+left: 24rem;
+
+/* background-color: #424fff; */
 }
 
 
@@ -197,9 +209,9 @@ overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
+    position: relative;
     left: 15rem;
-    bottom: 1.2rem;
+    bottom: -1rem;
     border-radius: 0.5rem;
     font-size: xx-large;
     font-weight: 900;
@@ -228,7 +240,7 @@ overflow: hidden;
     margin-right: 2rem;
     position: relative;
     left: 50rem;
-    top: 1.2rem;
+    top: -4rem;
     transition-duration: 0.5s;
     transition-property: all;
     transition-behavior: ease;
@@ -245,7 +257,7 @@ overflow: hidden;
     margin-right: 2rem;
     position: relative;
     left: 50rem;
-    top: 1.2rem;
+    top: -4rem;
 }
 
 
@@ -350,9 +362,9 @@ overflow: hidden;
     color: #fff;
     border-radius: 0.5rem;
     border: 1px white solid;
-    position: absolute;
-    right: 10rem;
-    bottom: 1rem;
+    position: relative;
+    left: 130rem;
+    top: -9rem;
     font-size: xx-large;
     font-weight: 900;
 }
@@ -369,9 +381,9 @@ overflow: hidden;
     color: #fff;
     border-radius: 0.5rem;
     border: 1px white solid;
-    position: absolute;
+    position: relative;
     right: 10rem;
-    bottom: 1rem;
+    bottom: -5rem;
     font-size: xx-large;
     font-weight: 900;
     transition-duration: 0.5s;
