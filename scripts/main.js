@@ -33,7 +33,7 @@ details.addEventListener("click", function() {
   });
 
 
-  // Bars js
+  // Program to append the array in the container
 
 
   const barsContainer = document.querySelector(".bars-container");
@@ -47,6 +47,7 @@ details.addEventListener("click", function() {
 
   let barWidth = 10;
 
+// Function to generate a new bars' array (Hardcoded for now!)
 
   generateArray.addEventListener("click", function createArray() {
    
