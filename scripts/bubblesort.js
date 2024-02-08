@@ -1,12 +1,36 @@
-// function bubbleSort() {
+async function bubbleSort() {
 
-    let arrays  = [1, 5, 21, 2, 123, 211, 2, 112, 12, 331];
-    for(let j = 0; j < arrays.length - 1; j++) {
-      for(let i = 0; i < arrays.length - 1; i++) {
-        if (arrays[i] > arrays[i + 1]) {
-            [arrays[i], arrays[i+1]] = [arrays[i+1], arrays[i]];
+    for(let j = 0; j < bars.length - 1; j++) {
+
+      for(let i = 0; i < bars.length - j - 1; i++) {
+
+        if (bars[i].clientHeight > bars[i + 1].clientHeight) {
+          bars[i].style.backgroundColor = "red";
+          bars[i + 1].style.backgroundColor = "red";
+
+          await delay();
+
+          let tempBarHeight = bars[i].style.height;
+
+
+          bars[i].style.height = bars[i + 1].style.height;
+          bars[i + 1].style.height = tempBarHeight;
+
+          await delay();
+
+          bars[i].style.backgroundColor = "#424fff";
+          bars[i + 1].style.backgroundColor = "#424fff";
+
+          } else {
+            bars[i].style.backgroundColor = "red";
+            bars[i + 1].style.backgroundColor = "red";
+
+            await delay();
+
+            bars[i].style.backgroundColor = "#424fff";
+            bars[i + 1].style.backgroundColor = "#424fff";
           }
        }
     }
-    console.log(arrays);
-// };
+  afterViewComplete();
+}

@@ -41,7 +41,7 @@ details.addEventListener("click", function() {
 
   let bars;
 
-  let maxBars = 150;
+  let maxBars = 30;
 
   let maxHeight = 500;
 
@@ -82,7 +82,31 @@ details.addEventListener("click", function() {
   );
 
 
+// Functions handling delay time
 
+  function delay() {
+    return new Promise((resolve) => setTimeout(resolve, 0));
+  }
 
+  function afterCompleteDelay() {
+    return new Promise((resolve) => setTimeout(resolve, 0));
+  }
 
+  async function afterViewComplete() {
+    for (let i = 0; i < bars.length; i++) {
+      bars[i].style.backgroundColor =
+        "yellow";
+      await afterCompleteDelay();
+    }
+    // enableFeatures();
+  }
 
+// Function for the slider
+
+  // function showSpeedSliderValue() {
+  //   sliderSpeedValue.innerHTML = sliderSpeed.value;
+  //   delayTime = Math.pow(sliderSpeed.value, 2) * 10;
+  //   var sliderSpeedValuePosition = sliderSpeed.value / sliderSpeed.max;
+  //   sliderSpeedValue.style.left =
+  //     sliderSpeedValuePosition * sliderSpeedValuePositionMultiplier + "px";
+  // }
