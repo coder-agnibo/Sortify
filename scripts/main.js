@@ -41,7 +41,7 @@ details.addEventListener("click", function() {
 
   let bars;
 
-  let maxBars = 30;
+  let maxBars = 150;
 
   let maxHeight = 500;
 
@@ -49,8 +49,10 @@ details.addEventListener("click", function() {
 
 // Function to generate a new bars' array (Hardcoded for now!)
 
-  generateArray.addEventListener("click", function createArray() {
+  generateArray.addEventListener("click", function createArray(event) {
    
+    event.defaultPrevented;
+    
     // clearing the container so that new array can be added
     barsContainer.innerHTML = ''; 
 
@@ -84,8 +86,8 @@ details.addEventListener("click", function() {
 
 // Functions handling delay time
 
-  function delay() {
-    return new Promise((resolve) => setTimeout(resolve, 0));
+  function delay(delay) {
+    return new Promise((resolve) => setTimeout(resolve, delay));
   }
 
   function afterCompleteDelay() {

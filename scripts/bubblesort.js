@@ -8,7 +8,7 @@ async function bubbleSort() {
           bars[i].style.backgroundColor = "red";
           bars[i + 1].style.backgroundColor = "red";
 
-          await delay();
+          await delay(100);
 
           let tempBarHeight = bars[i].style.height;
 
@@ -16,7 +16,7 @@ async function bubbleSort() {
           bars[i].style.height = bars[i + 1].style.height;
           bars[i + 1].style.height = tempBarHeight;
 
-          await delay();
+          await delay(100);
 
           bars[i].style.backgroundColor = "#424fff";
           bars[i + 1].style.backgroundColor = "#424fff";
@@ -25,7 +25,7 @@ async function bubbleSort() {
             bars[i].style.backgroundColor = "red";
             bars[i + 1].style.backgroundColor = "red";
 
-            await delay();
+            await delay(100);
 
             bars[i].style.backgroundColor = "#424fff";
             bars[i + 1].style.backgroundColor = "#424fff";
