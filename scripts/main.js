@@ -51,8 +51,7 @@ details.addEventListener("click", function() {
 
   generateArray.addEventListener("click", function createArray(event) {
    
-    event.defaultPrevented;
-    
+
     // clearing the container so that new array can be added
     barsContainer.innerHTML = ''; 
 

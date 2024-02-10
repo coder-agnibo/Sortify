@@ -18,6 +18,7 @@ async function selectionSort() {
                     bars[min].style.backgroundColor = "red";
                     bars[j].style.backgroundColor = "blue";
                 }
+                
                 min = i;
                 bars[i].style.backgroundColor = "green";
                 await delay(100);
