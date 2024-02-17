@@ -37,11 +37,11 @@ details.addEventListener("click", function() {
 
 
   const barsContainer = document.querySelector(".bars-container");
-  const generateArray = document.querySelector(".nav-text-1");
+  const generateArray = document.querySelector(".generate-array");
 
   let bars;
 
-  let maxBars = 150;
+  let maxBars = 152;
 
   let maxHeight = 500;
 
@@ -51,6 +51,9 @@ details.addEventListener("click", function() {
 
   generateArray.addEventListener("click", function createArray(event) {
    
+    if (this.classList.contains("disabled")) {
+      return; // Do nothing if the button is disabled
+    }
 
     // clearing the container so that new array can be added
     barsContainer.innerHTML = ''; 
@@ -85,13 +88,18 @@ details.addEventListener("click", function() {
 
 // Functions handling delay time
 
+
   function delay(delay) {
     return new Promise((resolve) => setTimeout(resolve, delay));
   }
 
+
+
   function afterCompleteDelay() {
     return new Promise((resolve) => setTimeout(resolve, 0));
   }
+ 
+
 
   async function afterViewComplete() {
     for (let i = 0; i < bars.length; i++) {
@@ -99,8 +107,28 @@ details.addEventListener("click", function() {
         "yellow";
       await afterCompleteDelay();
     }
-    // enableFeatures();
+    enableFeatures();
   }
+
+  function disableFeatures() {
+    document.querySelector(".generate-array").classList.add("disabled");
+    document.querySelectorAll(".button-sort").forEach(button => {
+      button.classList.add("disabled");
+      button.disabled = true;
+    });
+  }
+
+  function enableFeatures() {
+    document.querySelector(".generate-array").classList.remove("disabled");
+    
+    // If they were divs or spans, then this particular method wouldn't work 
+    document.querySelectorAll(".sorting-button").forEach(button => {
+      button.classList.remove("disabled");
+      button.disabled = false;
+    });
+
+  }
+
 
 // Function for the slider
 

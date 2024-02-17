@@ -1,5 +1,7 @@
 async function selectionSort() {
 
+    disableFeatures();
+    
     for(let j = 0; j < bars.length - 1; j++){
 
         bars[j].style.backgroundColor = "blue";

@@ -390,3 +390,11 @@ left: 24rem;
     transition-property: all;
     transition-behavior: ease;
 }
+
+
+ /* Disable features */
+
+ .disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }

@@ -1,4 +1,6 @@
 async function bubbleSort() {
+    disableFeatures();
+
 
     for(let j = 0; j < bars.length - 1; j++) {
 
