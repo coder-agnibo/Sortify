@@ -8,4 +8,3 @@ This a a project which intends to visualize how different sorting algorithms wor
 2. Need to work on the disable button while sorting - done
 3. Need to add the settings
 4. Need to work on the details
-5. Need to update some other functionalities
