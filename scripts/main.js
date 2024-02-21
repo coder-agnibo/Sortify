@@ -41,7 +41,7 @@ details.addEventListener("click", function() {
 
   let bars;
 
-  let maxBars = 152;
+  let maxBars = {maxBar};
 
   let maxHeight = 500;
 
@@ -132,10 +132,15 @@ details.addEventListener("click", function() {
 
 // Function for the slider
 
-  // function showSpeedSliderValue() {
-  //   sliderSpeedValue.innerHTML = sliderSpeed.value;
-  //   delayTime = Math.pow(sliderSpeed.value, 2) * 10;
-  //   var sliderSpeedValuePosition = sliderSpeed.value / sliderSpeed.max;
-  //   sliderSpeedValue.style.left =
-  //     sliderSpeedValuePosition * sliderSpeedValuePositionMultiplier + "px";
-  // }
+const slider = document.getElementById('slider');
+const output = document.getElementById('value');
+let maxBar = slider.value; // Initialize maxBars with the default slider value
+
+output.innerHTML = slider.value; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = this.value;
+  maxBars = this.value; // Update maxBars with the current slider value
+  console.log(maxBars); // Optional: for debugging, to see the value in the console
+}

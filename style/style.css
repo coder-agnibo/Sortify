@@ -152,13 +152,18 @@ left: 24rem;
     transition-duration: 0.5s;
     transition-property: all;
     transition-behavior: ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .settings-bar-1{
     position: absolute;
-    height: 76rem;
+    height: 76.5rem;
     width: 25rem;
-    background-color: rgb(47, 244, 155);
+    background-color: rgb(31, 254, 154);
     border-left: 1px solid white;
     z-index: 10;
     position: absolute;
@@ -170,14 +175,18 @@ left: 24rem;
 }
 
 .close-button{
-    position: absolute;
-    top: 1rem;
+    position: relative;
+    top: 3rem;
+    left: 16rem;
     font-weight: 800;
-    font-size: large;
+    font-size: x-large;
+    color: #fff;
+    cursor: pointer;
 }
 
+
 .close-button-clicked{
-    position: absolute;
+    position: relative;
     height: 76rem;
     width: 25rem;
     background-color: rgb(47, 244, 155);
@@ -190,6 +199,21 @@ left: 24rem;
     transition-property: all;
     transition-behavior: ease;
 }
+
+.close-button img {
+width: 30px;
+height: 30px;
+}
+
+
+.slider-container-maxBar {
+    margin: 20px;
+}
+
+.value {
+   margin-top: 10px;
+}
+
 
 /* Styling of the bottom bar */
 
@@ -239,12 +263,13 @@ left: 24rem;
     font-weight: 800;
     margin-right: 2rem;
     position: relative;
-    left: 50rem;
+    left: 42rem;
     top: -4rem;
     transition-duration: 0.5s;
     transition-property: all;
     transition-behavior: ease;
 }
+
 
 .buttons button:hover{
     background-color: #424fff;
@@ -256,8 +281,9 @@ left: 24rem;
     font-weight: 800;
     margin-right: 2rem;
     position: relative;
-    left: 50rem;
+    left: 42rem;
     top: -4rem;
+    transform: scale(1.2);
 }
 
 
@@ -398,3 +424,12 @@ left: 24rem;
     opacity: 0.5;
     cursor: not-allowed;
   }
+
+
+  /* Setting bar */
+
+.setting-image{
+    width: 2rem;
+    height: 2rem;
+    color: #fff;
+}

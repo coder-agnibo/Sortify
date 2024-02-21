@@ -1,5 +1,5 @@
 async function heapSort() {
-    disableFeatures(); // Assume this function disables UI features
+    disableFeatures(); // Disables UI features not relevant during sorting
 
     let n = bars.length;
 
@@ -10,50 +10,60 @@ async function heapSort() {
 
     // One by one extract elements
     for (let i = n - 1; i > 0; i--) {
-        // Move current root to end
-        swap(bars, 0, i);
+        // Visual update before swap
+        bars[0].style.backgroundColor = "magenta"; // Color to highlight the root before swap
+        bars[i].style.backgroundColor = "magenta"; // Color to highlight the target before swap
+        await delay(100); // Allow observation of the highlight
+
+        await swap(bars, 0, i); // Await the swap function
+
         bars[i].style.backgroundColor = "green"; // Mark the sorted element
+
+        await delay(100); // Allow observation of the swap
 
         // call max heapify on the reduced heap
         await heapify(bars, i, 0);
     }
 
-    afterViewComplete(); // Assume this function re-enables UI features
+    afterViewComplete(); // Re-enables UI features after sorting is complete
 }
 
 async function heapify(bars, n, i) {
-    let largest = i; // Initialize largest as root
-    let l = 2 * i + 1; // left = 2*i + 1
-    let r = 2 * i + 2; // right = 2*i + 2
+    let largest = i;
+    let left = 2 * i + 1;
+    let right = 2 * i + 2;
 
-    // If left child is larger than root
-    if (l < n && parseInt(bars[l].style.height) > parseInt(bars[largest].style.height))
-        largest = l;
+    if (left < n && parseInt(bars[left].style.height) > parseInt(bars[largest].style.height)) {
+        largest = left;
+    }
 
-    // If right child is larger than largest so far
-    if (r < n && parseInt(bars[r].style.height) > parseInt(bars[largest].style.height))
-        largest = r;
+    if (right < n && parseInt(bars[right].style.height) > parseInt(bars[largest].style.height)) {
+        largest = right;
+    }
 
-    // If largest is not root
-    if (largest != i) {
-        swap(bars, i, largest);
+    if (largest !== i) {
+        await swap(bars, i, largest);
+        
+        await delay(10);
 
-        // Recursively heapify the affected sub-tree
+        // Recursively heapify the affected subtree
         await heapify(bars, n, largest);
     }
 }
 
 async function swap(bars, index1, index2) {
+    // Visual swapping effect
+    bars[index1].style.backgroundColor = "red";
+    bars[index2].style.backgroundColor = "red";
+    await delay(10);
+
     let temp = bars[index1].style.height;
     bars[index1].style.height = bars[index2].style.height;
     bars[index2].style.height = temp;
 
-    // Visual swapping effect
-    bars[index1].style.backgroundColor = "red";
-    bars[index2].style.backgroundColor = "red";
-    await delay(10); // Assume delay function exists for visual effect
-    bars[index1].style.backgroundColor = "black";
-    bars[index2].style.backgroundColor = "black";
-}
+    await delay(10); // This delay allows the color change to be observed
 
-// Include the delay function here, similar to the one used in your merge sort visualization
+    // Optionally reset colors back to some default (e.g., black) immediately after swap
+    bars[index1].style.backgroundColor = "#424fff";
+    bars[index2].style.backgroundColor = "#424fff";
+}
