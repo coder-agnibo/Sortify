@@ -206,14 +206,6 @@ height: 30px;
 }
 
 
-.slider-container-maxBar {
-    margin: 20px;
-}
-
-.value {
-   margin-top: 10px;
-}
-
 
 /* Styling of the bottom bar */
 
@@ -432,4 +424,20 @@ height: 30px;
     width: 2rem;
     height: 2rem;
     color: #fff;
+}
+
+.range-slider-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.range-slider-container label {
+    display: block;
+    margin-bottom: 10px;
+    color: #fff; /* Adjust the color based on your preference */
+}
+
+.range-slider-container span {
+    margin-left: 10px;
+    color: #fff; /* Adjust the color based on your preference */
 }
