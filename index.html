@@ -28,18 +28,21 @@
        <img class="setting-image" src="assest/settings.png">
 
       <!-- New range sliders -->
+      <div class="ranges">
       <div class="range-slider-container">
-       <label for="max-bars">Max no of bars</label>
-       <input type="range" id="max-bars" min="50" max="150" value="100">
+        <label for="max-bars" class="max-bars">Max. no of bars</label>
+        <span id="max-bars-value">0</span>
+        <input type="range" id="max-bars" min="50" max="150" value="100">
        <span id="max-bars-value">150</span>
       </div>
 
       <div class="range-slider-container">
-       <label for="speed-execution">Speed of execution</label>
+       <label for="speed-execution" class="speed-sett">Speed of execution</label>
+       <span id="speed-execution-value">0</span>
        <input type="range" id="speed-execution" min="50" max="150" value="100">
        <span id="speed-execution-value">100</span>
       </div>
-
+    </div>
     </div>
 
 

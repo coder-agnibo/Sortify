@@ -132,15 +132,14 @@ details.addEventListener("click", function() {
 
 // Function for the slider
 
-const slider = document.getElementById('slider');
-const output = document.getElementById('value');
-let maxBar = slider.value; // Initialize maxBars with the default slider value
+const rangeInputs = document.querySelectorAll('input[type="range"]');
 
-output.innerHTML = slider.value; // Display the default slider value
+rangeInputs.forEach(input => {
+    input.addEventListener('mousedown', () => {
+        input.style.backgroundColor = 'black'; // Change to active style
+    });
 
-// Update the current slider value (each time you drag the slider handle)
-slider.oninput = function() {
-  output.innerHTML = this.value;
-  maxBars = this.value; // Update maxBars with the current slider value
-  console.log(maxBars); // Optional: for debugging, to see the value in the console
-}
+    input.addEventListener('mouseup', () => {
+        input.style.backgroundColor = ''; // Revert to original style
+    });
+});

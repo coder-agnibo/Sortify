@@ -142,9 +142,9 @@ left: 24rem;
 .settings-bar{
     position: absolute;
     height: 76rem;
-    width: 25rem;
-    background-color: rgb(47, 244, 155);
-    border-left: 1px solid white;
+    width: 27rem;
+    background-color: #424fff;
+    /* border-left: 1px solid white; */
     z-index: 10;
     position: absolute;
     top: -1rem;
@@ -162,9 +162,9 @@ left: 24rem;
 .settings-bar-1{
     position: absolute;
     height: 76.5rem;
-    width: 25rem;
-    background-color: rgb(31, 254, 154);
-    border-left: 1px solid white;
+    width: 27rem;
+    background-color: #424fff;
+    /* border-left: 1px solid white; */
     z-index: 10;
     position: absolute;
     top: -1rem;
@@ -177,7 +177,7 @@ left: 24rem;
 .close-button{
     position: relative;
     top: 3rem;
-    left: 16rem;
+    left: 19rem;
     font-weight: 800;
     font-size: x-large;
     color: #fff;
@@ -188,9 +188,9 @@ left: 24rem;
 .close-button-clicked{
     position: relative;
     height: 76rem;
-    width: 25rem;
-    background-color: rgb(47, 244, 155);
-    border-left: 1px solid white;
+    width: 27rem;
+    background-color: #424fff;
+    /* border-left: 1px solid white; */
     z-index: 10;
     position: absolute;
     top: -1rem;
@@ -201,8 +201,8 @@ left: 24rem;
 }
 
 .close-button img {
-width: 30px;
-height: 30px;
+width: 20px;
+height: 20px;
 }
 
 
@@ -421,23 +421,104 @@ height: 30px;
   /* Setting bar */
 
 .setting-image{
-    width: 2rem;
-    height: 2rem;
-    color: #fff;
+    width: 5rem;
+    height: 5rem;
+    filter: brightness(2) invert(1);
+    position: relative;
+    top: 9rem;
+    left: 9rem;
+    display: block;
 }
 
 .range-slider-container {
-    margin: 20px;
+    margin: 1.5rem;
+    margin-top: 20px;
     text-align: center;
+    padding: 2.6rem;
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+
+    position: relative;
+    top: 12rem;
+    right: 1rem;
 }
 
 .range-slider-container label {
     display: block;
     margin-bottom: 10px;
-    color: #fff; /* Adjust the color based on your preference */
+    color: white; /* Adjust the color based on your preference */
 }
 
 .range-slider-container span {
-    margin-left: 10px;
+ 
     color: #fff; /* Adjust the color based on your preference */
+}
+
+
+/* Styling the thumb of the slider */
+input[type="range"] {
+    -webkit-appearance: none; /* Override default CSS styles */
+    appearance: none;
+    width: 80%; /* Slider width */
+    height: 20px; /* Slider height */
+    background: white; /* Background color for the slider */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Slider opacity */
+    transition: opacity .2s; /* Smooth transition for hover effect */
+}
+
+/* Styling for the thumb (the draggable circle) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default CSS styles */
+    appearance: none;
+    width: 25px; /* Width of the thumb */
+    height: 25px; /* Height of the thumb */
+    background: #424fff; /* Background color for the thumb */
+    cursor: pointer; /* Cursor changes to a pointer when hovered */
+    border-radius: 50%; /* Makes the thumb circular */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #424fff;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 25px;
+    height: 25px;
+    background: green;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Remove the default track styling in WebKit browsers */
+input[type="range"]::-webkit-slider-runnable-track {
+    background: white;
+}
+
+input[type="range"]::-moz-range-track {
+    background: white;
+}
+
+input[type="range"]::-ms-track {
+    background: white;
+    border-color: transparent; /* Removes default border */
+    color: transparent; /* Essential to remove the default color in IE */
+}
+
+/* Optional: Style the focus state of the thumb */
+input[type="range"]:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.5); /* Adds a glow effect */
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.5);
+}
+
+input[type="range"]:focus::-ms-thumb {
+    box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.5);
 }
