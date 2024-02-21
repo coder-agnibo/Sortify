@@ -131,15 +131,3 @@ details.addEventListener("click", function() {
 
 
 // Function for the slider
-
-const rangeInputs = document.querySelectorAll('input[type="range"]');
-
-rangeInputs.forEach(input => {
-    input.addEventListener('mousedown', () => {
-        input.style.backgroundColor = 'black'; // Change to active style
-    });
-
-    input.addEventListener('mouseup', () => {
-        input.style.backgroundColor = ''; // Revert to original style
-    });
-});

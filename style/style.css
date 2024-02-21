@@ -152,11 +152,6 @@ left: 24rem;
     transition-duration: 0.5s;
     transition-property: all;
     transition-behavior: ease;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .settings-bar-1{
@@ -172,6 +167,7 @@ left: 24rem;
     transition-duration: 0.5s;
     transition-property: all;
     transition-behavior: ease;
+
 }
 
 .close-button{
@@ -199,6 +195,7 @@ left: 24rem;
     transition-property: all;
     transition-behavior: ease;
 }
+
 
 .close-button img {
 width: 20px;
@@ -436,12 +433,13 @@ height: 20px;
     text-align: center;
     padding: 2.6rem;
     color: white;
-    font-size: x-large;
-    font-weight: 700;
+    font-size: larger;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     position: relative;
     top: 12rem;
-    right: 1rem;
+    right: 2rem;
 }
 
 .range-slider-container label {
@@ -450,10 +448,6 @@ height: 20px;
     color: white; /* Adjust the color based on your preference */
 }
 
-.range-slider-container span {
- 
-    color: #fff; /* Adjust the color based on your preference */
-}
 
 
 /* Styling the thumb of the slider */
@@ -474,7 +468,7 @@ input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 25px; /* Width of the thumb */
     height: 25px; /* Height of the thumb */
-    background: #424fff; /* Background color for the thumb */
+    background: #242424; /* Background color for the thumb */
     cursor: pointer; /* Cursor changes to a pointer when hovered */
     border-radius: 50%; /* Makes the thumb circular */
 }
@@ -482,7 +476,7 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    background: #424fff;
+    background: #242424;
     cursor: pointer;
     border-radius: 50%;
 }
@@ -490,7 +484,7 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]::-ms-thumb {
     width: 25px;
     height: 25px;
-    background: green;
+    background: rgb(255, 255, 255);
     cursor: pointer;
     border-radius: 50%;
 }
@@ -498,10 +492,12 @@ input[type="range"]::-ms-thumb {
 /* Remove the default track styling in WebKit browsers */
 input[type="range"]::-webkit-slider-runnable-track {
     background: white;
+ 
 }
 
 input[type="range"]::-moz-range-track {
     background: white;
+  
 }
 
 input[type="range"]::-ms-track {
@@ -512,13 +508,13 @@ input[type="range"]::-ms-track {
 
 /* Optional: Style the focus state of the thumb */
 input[type="range"]:focus::-webkit-slider-thumb {
-    box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.5); /* Adds a glow effect */
+    box-shadow: 0 0 0 3px rgb(255, 255, 255); /* Adds a glow effect */
 }
 
 input[type="range"]:focus::-moz-range-thumb {
-    box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 0 3px rgb(255, 255, 255);
 }
 
 input[type="range"]:focus::-ms-thumb {
-    box-shadow: 0 0 0 3px rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 0 3px rgb(255, 255, 255);
 }
