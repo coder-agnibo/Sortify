@@ -26,6 +26,9 @@ speedExecutionRange.addEventListener('change', () => {
   document.querySelector("#details-speed").innerHTML = speedExecution;
 });
 
+barsWidthRange.addEventListener('change', () => {
+  document.querySelector("#details-width").innerHTML = barsWidthRange.value;
+});
 
 button.addEventListener("click", function(){
 settings.classList.remove("settings-bar-1");
@@ -141,7 +144,7 @@ details.addEventListener("click", function() {
     document.querySelector(".generate-array").classList.remove("disabled");
     
     // If they were divs or spans, then this particular method wouldn't work 
-    document.querySelectorAll(".sorting-button").forEach(button => {
+    document.querySelectorAll(".button-sort").forEach(button => {
       button.classList.remove("disabled");
       button.disabled = false;
     });
