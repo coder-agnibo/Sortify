@@ -356,7 +356,7 @@ height: 20px;
     align-items: center;
 }
 
-.bars-height{
+.current-speed{
     height: 7rem;
     width: 10rem;
     display: flex;
@@ -415,7 +415,7 @@ height: 20px;
   }
 
 
-  /* Setting bar */
+/* Setting bar */
 
 .setting-image{
     width: 5rem;
@@ -431,15 +431,15 @@ height: 20px;
     margin: 1.5rem;
     margin-top: 20px;
     text-align: center;
-    padding: 2.6rem;
+    padding: 2rem;
     color: white;
-    font-size: larger;
+    font-size: large;
     font-weight: 500;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     position: relative;
     top: 12rem;
-    right: 2rem;
+    right: 2.5rem;
 }
 
 .range-slider-container label {

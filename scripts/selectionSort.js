@@ -7,13 +7,13 @@ async function selectionSort() {
         bars[j].style.backgroundColor = "blue";
         let min = j;
 
-        await delay(10);
+        await delay(speedExecution);
 
         for (let i = j + 1; i < bars.length; i++) {
 
             bars[i].style.backgroundColor = "blue";
 
-            await delay(10);
+            await delay(speedExecution);
 
             if (parseInt(bars[min].style.height) > parseInt(bars[i].style.height)) {
                 if (min !== i) { // Reset the color of the previous 'min' if it's not the initial 'j'
@@ -22,11 +22,11 @@ async function selectionSort() {
                 }
                 
                 min = i;
-                bars[i].style.backgroundColor = "green";
-                await delay(100);
+                bars[i].style.backgroundColor = "white";
+                await delay(speedExecution);
             } else {
                 bars[i].style.backgroundColor = "red";
-                await delay(100);
+                await delay(speedExecution);
             }
         }
 
@@ -34,16 +34,16 @@ async function selectionSort() {
             let tempHeight = bars[j].style.height;
             bars[j].style.height = bars[min].style.height;
             bars[min].style.height = tempHeight;
-            await delay(100);
+            await delay(speedExecution);
 
             // Reset colors after swap
             bars[min].style.backgroundColor = "red";
-            await delay(100);
+            await delay(speedExecution);
         }
 
         bars[j].style.backgroundColor = "red"; // Reset the color of the 'j' bar after operation
 
-        await delay(100);
+        await delay(speedExecution);
     }
 
     afterViewComplete(); // Call this function to indicate sorting is complete

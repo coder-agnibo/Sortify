@@ -29,18 +29,26 @@
 
       <!-- New range sliders -->
       <div class="ranges">
+
       <div class="range-slider-container">
         <label for="max-bars" class="max-bars">Maximum Bars</label>
-        <span id="max-bars-value">0</span>
-        <input type="range" id="max-bars" min="50" max="150" value="100">
-       <span id="max-bars-value">150</span>
+        <span>50</span>
+        <input type="range" id="max-bars-range" min="50" max="150" value="100">
+        <span>150</span>
       </div>
 
       <div class="range-slider-container">
        <label for="speed-execution" class="speed-sett">Execution Speed</label>
-       <span id="speed-execution-value">0</span>
-       <input type="range" id="speed-execution" min="50" max="150" value="100">
-       <span id="speed-execution-value">100</span>
+       <span id="speed-execution-value">10</span>
+       <input type="range" id="speed-execution" min="10" max="50" value="10">
+       <span id="speed-execution-value">50</span>
+      </div>
+
+      <div class="range-slider-container">
+        <label for="bars-width" class="bars-width">Bars Width</label>
+        <span id="bars-width-value">5</span>
+        <input type="range" id="bars-width" min="5" max="15" value="10">
+        <span id="bars-width">15</span>
       </div>
     </div>
     </div>
@@ -76,12 +84,12 @@
 
         <div class="total-bars"> 
           <span> Total Bars </span>
-          <h1> 100 </h1>
+          <h1 id="details-bars"> 100 </h1>
         </div>
 
-        <div class="bars-height"> 
-         <span>Height Range</span>
-         <h1> 0 - 100 </h1>
+        <div class="current-speed"> 
+         <span>Current speed</span>
+         <h1 id="details-speed"> 10 </h1>
         </div>
 
       </div>

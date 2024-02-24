@@ -3,12 +3,32 @@ const settings = document.querySelector(".settings-bar");
 const settingsButton = document.querySelector(".nav-text-2");
 const details = document.querySelector(".details-button");
 const detailsBar = document.querySelector("#details-bar-main");
+const maxBarsRange = document.querySelector("#max-bars-range");
+const speedExecutionRange = document.querySelector("#speed-execution");
+const barsWidthRange = document.querySelector("#bars-width");
+
+
+let maxBar = parseInt(maxBarsRange.value, 10); // Initialize with current value
+let speedExecution = parseInt(speedExecutionRange.value, 10); // Initialize with current value
+
+
+
+maxBarsRange.addEventListener('change', () => {
+  maxBar = parseInt(maxBarsRange.value, 10);
+  // Optionally, update the UI or regenerate bars here if needed
+  console.log(maxBar); // Check updated value
+  document.querySelector("#details-bars").innerHTML = maxBar;
+});
+
+speedExecutionRange.addEventListener('change', () => {
+  speedExecution = parseInt(speedExecutionRange.value, 10);
+  // Optionally, adjust delay-related functionality here if needed
+  document.querySelector("#details-speed").innerHTML = speedExecution;
+});
 
 
 button.addEventListener("click", function(){
-// settings.classList.remove("settings-bar");
 settings.classList.remove("settings-bar-1");
-// settings.classList.remove("settings-bar");
 settings.classList.add("close-button-clicked")
 // console.log(`working properly!`);
 });
@@ -40,17 +60,16 @@ details.addEventListener("click", function() {
   const generateArray = document.querySelector(".generate-array");
 
   let bars;
-
-  let maxBars = {maxBar};
-
   let maxHeight = 500;
-
-  let barWidth = 10;
 
 // Function to generate a new bars' array (Hardcoded for now!)
 
   generateArray.addEventListener("click", function createArray(event) {
    
+    let maxBars = maxBar;
+
+    let barWidth = barsWidthRange.value;
+
     if (this.classList.contains("disabled")) {
       return; // Do nothing if the button is disabled
     }
@@ -89,14 +108,14 @@ details.addEventListener("click", function() {
 // Functions handling delay time
 
 
-  function delay(delay) {
-    return new Promise((resolve) => setTimeout(resolve, delay));
+  function delay(speedExecution) {
+    return new Promise((resolve) => setTimeout(resolve, 1000 / speedExecution));
   }
 
 
 
   function afterCompleteDelay() {
-    return new Promise((resolve) => setTimeout(resolve, 0));
+    return new Promise((resolve) => setTimeout(resolve, 10));
   }
  
 

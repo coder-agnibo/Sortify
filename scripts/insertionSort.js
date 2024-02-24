@@ -15,7 +15,7 @@ async function insertionSort() {
         while (j >= 0 && parseInt(bars[j].style.height) > parseInt(key)) {
             bars[j + 1].style.height = bars[j].style.height; // Move the bar visually
             bars[j].style.backgroundColor = "pink"; // Highlight the bar being compared
-            await delay(10); // Visual delay
+            await delay(speedExecution); // Visual delay
 
             // Reset the color of bars after comparison
             if (j != i - 1) {

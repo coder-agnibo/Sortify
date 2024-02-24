@@ -38,7 +38,7 @@ async function partition(bars, start, end, pivotElement) {
         while (parseInt(bars[start].style.height) < pivotValue) {
             bars[start].style.backgroundColor = "black";
 
-            await delay(10);
+            await delay(speedExecution);
 
             bars[start].style.backgroundColor = "red";
             start++;
@@ -47,7 +47,7 @@ async function partition(bars, start, end, pivotElement) {
         while (parseInt(bars[end].style.height) > pivotValue) {
             bars[end].style.backgroundColor = "black";
 
-            await delay(10);
+            await delay(speedExecution);
 
             bars[end].style.backgroundColor = "red";
             end--;
@@ -58,13 +58,13 @@ async function partition(bars, start, end, pivotElement) {
             bars[start].style.backgroundColor = "pink";
             bars[end].style.backgroundColor = "pink";
         
-            await delay(10);
+            await delay(speedExecution);
         
             let temp = bars[start].style.height;
             bars[start].style.height = bars[end].style.height;
             bars[end].style.height = temp;
             
-            await delay(10);
+            await delay(speedExecution);
         
             bars[start].style.backgroundColor = "red";
             bars[end].style.backgroundColor = "red";

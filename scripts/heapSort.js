@@ -13,13 +13,13 @@ async function heapSort() {
         // Visual update before swap
         bars[0].style.backgroundColor = "magenta"; // Color to highlight the root before swap
         bars[i].style.backgroundColor = "magenta"; // Color to highlight the target before swap
-        await delay(100); // Allow observation of the highlight
+        await delay(speedExecution); // Allow observation of the highlight
 
         await swap(bars, 0, i); // Await the swap function
 
         bars[i].style.backgroundColor = "green"; // Mark the sorted element
 
-        await delay(100); // Allow observation of the swap
+        await delay(speedExecution); // Allow observation of the swap
 
         // call max heapify on the reduced heap
         await heapify(bars, i, 0);
@@ -44,7 +44,7 @@ async function heapify(bars, n, i) {
     if (largest !== i) {
         await swap(bars, i, largest);
         
-        await delay(10);
+        await delay(speedExecution);
 
         // Recursively heapify the affected subtree
         await heapify(bars, n, largest);
@@ -55,13 +55,13 @@ async function swap(bars, index1, index2) {
     // Visual swapping effect
     bars[index1].style.backgroundColor = "red";
     bars[index2].style.backgroundColor = "red";
-    await delay(10);
+    await delay(speedExecution);
 
     let temp = bars[index1].style.height;
     bars[index1].style.height = bars[index2].style.height;
     bars[index2].style.height = temp;
 
-    await delay(10); // This delay allows the color change to be observed
+    await delay(speedExecution); // This delay allows the color change to be observed
 
     // Optionally reset colors back to some default (e.g., black) immediately after swap
     bars[index1].style.backgroundColor = "#424fff";

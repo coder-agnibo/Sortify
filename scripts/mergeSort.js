@@ -62,7 +62,7 @@ async function merge(bars, start, middle, end){
 
             bars[k].style.height = leftArr[i]; // Assign the height value directly
             
-            await delay(10);
+            await delay(speedExecution);
             
             bars[k].style.backgroundColor = "red";
             bars[start + i].style.backgroundColor = "red";
@@ -76,6 +76,8 @@ async function merge(bars, start, middle, end){
             bars[(middle + j + 1)].style.backgroundColor = "black";
 
             bars[k].style.height = rightArr[j]; // Assign the height value directly
+
+            await delay(speedExecution);
             
             bars[k].style.backgroundColor = "red";
             bars[(middle + j + 1)].style.backgroundColor = "red";
@@ -96,7 +98,7 @@ async function merge(bars, start, middle, end){
 
         bars[k].style.height = leftArr[i]; // Complete the remaining elements
         
-        await delay(10);
+        await delay(speedExecution);
         
         bars[k].style.backgroundColor = "red";
 
@@ -110,11 +112,11 @@ async function merge(bars, start, middle, end){
         bars[k].style.backgroundColor = "black";
         bars[(middle + j + 1)].style.backgroundColor = "pink";
 
-        await delay(10);
+        await delay(speedExecution);
 
         bars[k].style.height = rightArr[j]; // Complete the remaining elements
         
-        await delay(10);
+        await delay(speedExecution);
         
         bars[k].style.backgroundColor = "red";
         bars[(middle + j + 1)].style.backgroundColor = "red";
