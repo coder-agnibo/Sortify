@@ -544,3 +544,86 @@ input[type="range"]:focus::-ms-thumb {
     box-shadow: 0 0 0 3px rgb(255, 255, 255);
 }
 
+
+
+
+
+
+
+
+@media (max-width: 720px) {
+    /* Adjust the navigation bar */
+    nav {
+        height: 1rem; /* Smaller height for mobile */
+        flex-direction: row; /* Stack items vertically */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-text-1, .nav-text-2, .version {
+        margin-right: 0; /* Remove margin to fit on small screens */
+        width: auto; /* Adjust width */
+        padding: 0 10px; /* Add some padding */
+    }
+
+    nav img {
+        margin: 0 10px; /* Adjust margin for the logo */
+    }
+
+    /* Adjust settings for the main content area */
+    .middle-container, .bars-container {
+        height: 400px; /* Height auto to accommodate content */
+        width: 100%; /* Full width */
+        flex-direction: column; /* Stack elements vertically */
+        padding: 20px; /* Add some padding */
+    }
+
+    /* Adjust the settings bar for small screens */
+    .settings-bar, .settings-bar-1 {
+        width: 100%; /* Full width */
+        height: auto; /* Auto height */
+        position: relative; /* Adjust position */
+        top: 0; /* Reset top position */
+        right: -10; /* Reset right position */
+    }
+
+    .close-button {
+        top: 1rem; /* Adjust position */
+        left: auto; /* Adjust position */
+        right: 20px; /* Place it towards the right */
+    }
+
+    /* Adjust bottom bar and buttons for better usability */
+    .bottom-bar {
+        height: auto; /* Adjust height */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .buttons button, .text-in-sorts, .details-button {
+        width: 90%; /* Full width minus padding */
+        margin: 10px auto; /* Center align and add some margin */
+        left: 0; /* Reset left position */
+        top: 0; /* Reset top position */
+    }
+
+    /* Adjust the details bars for visibility */
+    .details-bar, .details-bar2 {
+        position: relative; /* Adjust position */
+        left: 0; /* Reset left position */
+        top: 0; /* Reset top position */
+        width: 90%; /* Adjust width */
+        margin: 10px auto; /* Center align and add some margin */
+    }
+
+    /* Adjust sliders for better control on small screens */
+    .range-slider-container {
+        width: 100%; /* Full width */
+        padding: 1rem; /* Adjust padding */
+        top: 0; /* Reset top position */
+        right: 0; /* Reset right position */
+    }
+
+    input[type="range"] {
+        width: calc(100% - 40px); /* Adjust width considering padding */
+    }
+}
