@@ -32,13 +32,13 @@ barsWidthRange.addEventListener('change', () => {
 
 button.addEventListener("click", function(){
 settings.classList.remove("settings-bar-1");
-settings.classList.add("close-button-clicked")
+settings.classList.add("settings-bar")
 // console.log(`working properly!`);
 });
 
 
 settingsButton.addEventListener("click", function(){
-settings.classList.remove("close-button-clicked");
+// settings.classList.remove("close-button-clicked");
 settings.classList.remove("settings-bar");
 settings.classList.add("settings-bar-1");
 });
