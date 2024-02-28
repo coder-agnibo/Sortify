@@ -683,7 +683,7 @@ top: -2.2rem;
     z-index: 10;
     position: absolute;
     top: -1rem;
-    right: -5rem;
+    right: 0rem;
     transition-duration: 0.5s;
     transition-property: all;
     transition-behavior: ease;
