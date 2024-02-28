@@ -547,7 +547,7 @@ input[type="range"]:focus::-ms-thumb {
 }
 
 
-@media (min-width: 768px) {
+@media screen and (min-width: 1281px) and (max-width: 1920px) {
 
 .image-cont{
     position: relative;
