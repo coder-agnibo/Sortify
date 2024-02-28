@@ -151,5 +151,4 @@ details.addEventListener("click", function() {
 
   }
 
-
-// Function for the slider
+  
