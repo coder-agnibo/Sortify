@@ -545,3 +545,163 @@ input[type="range"]:focus::-moz-range-thumb {
 input[type="range"]:focus::-ms-thumb {
     box-shadow: 0 0 0 3px rgb(255, 255, 255);
 }
+
+
+@media (min-width: 768px) {
+
+.image-cont{
+    position: relative;
+    left: -21rem;
+}
+
+.bars-container{
+    position: relative;
+    top: -12.9rem;
+    left: 18.2rem;
+}
+
+.bottom-bar{
+    position: relative;
+    top: -12.9rem;
+    width: 120rem;
+    height: 5rem;
+}
+
+.text-in-sorts{
+position: relative;
+width: 5rem;
+height: 3rem;
+font-size: large;
+font-weight: 700;
+top: 0.7rem;
+}
+
+.buttons button{
+position: relative;
+width: 7rem;
+height: 3rem;
+font-size: small;
+font-weight: 700;
+top: -2.2rem;
+}
+
+.buttons{
+    margin-left: -8.1rem ;
+}
+
+.buttons button:hover{
+    background-color: #424fff;
+    color: white;
+    border-radius: 0.5rem;
+    width: 7rem;
+    height: 3rem;
+    font-size: small;
+    font-weight: 900;
+    margin-right: 2rem;
+    position: relative; 
+    transform: scale(1.1);
+    left: 42rem;
+    top: -2rem; 
+}
+
+.details-button{
+    position: relative;
+    top: -5.2rem;
+    left: 100rem;
+    width: 7rem;
+    height: 3rem;
+    font-size: large;
+    font-weight: 900;
+    border-radius: 0.5rem;
+}
+
+.details-button:hover{
+    height: 3rem;
+    width: 7rem;
+    background-color: #4ed096;
+    color: #fff;
+    border-radius: 0.5rem;
+    border: 1px white solid;
+    position: relative;
+    right: 10rem;
+    bottom: -5rem;
+    font-size: large;
+    font-weight: 900;
+}
+
+.details-bar2{
+    height: 14rem;
+    width: 10rem;
+    background-color: #424fff;
+    color: #fff;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: -37rem;
+    left: -0.1rem;
+    
+    border: 2px white solid;
+
+    transition-duration: 0.8s;
+    transition-property: left;
+    transition-behavior: ease-in;
+}
+
+.details-bar{
+    height: 14rem;
+    width: 10rem;
+    background-color: #424fff;
+    color: #fff;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: -37rem;
+    left: -12rem;
+    
+    border: 2px white solid;
+
+    transition-duration: 0.8s;
+    transition-property: all;
+    transition-behavior: ease-out;
+}
+
+
+.settings-bar-1{
+    position: absolute;
+    height: 69rem;
+    width: 27rem;
+    background-color: #424fff;
+    /* border-left: 1px solid white; */
+    z-index: 10;
+    position: absolute;
+    top: -1rem;
+    right: -5rem;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-behavior: ease;
+}
+
+.settings-bar{
+    position: absolute;
+    height: 63.6rem;
+    width: 27rem;
+    background-color: #424fff;
+    /* border-left: 1px solid white; */
+    z-index: 10;
+    position: absolute; 
+    top: -1rem;
+    right: -5rem;
+    transition-duration: 0.5s;
+    transition-property: all;
+    transition-behavior: ease;
+}
+
+}
