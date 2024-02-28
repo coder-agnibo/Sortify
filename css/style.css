@@ -523,23 +523,30 @@ input[type="range"]:focus::-ms-thumb {
 
 @media screen and (min-width: 1281px) and (max-width: 1920px) {
 
+body{
+    width: 100%;
+    height: 1080px;
+    overflow: hidden;
+}
+
 .image-cont{
     position: relative;
     left: -21rem;
 }
+
 
 .bars-container{
     position: relative;
     top: -12.9rem;
     left: 18.2rem;
 }
-
+/* 
 .bottom-bar{
     position: relative;
     top: -16.5rem;
     width: 120rem;
     height: 5rem;
-}
+} */
 
 .text-in-sorts{
 position: relative;
@@ -650,7 +657,7 @@ top: -2.2rem;
 
 .settings-bar-1{
     position: absolute;
-    height: 64rem;
+    height: 63rem;
     width: 27rem;
     background-color: #424fff;
     /* border-left: 1px solid white; */
@@ -665,7 +672,7 @@ top: -2.2rem;
 
 .settings-bar{
     position: absolute;
-    height: 64rem;
+    height: 63rem;
     width: 27rem;
     background-color: #424fff;
     /* border-left: 1px solid white; */
@@ -681,7 +688,7 @@ top: -2.2rem;
 .middle-container{
 
     background-color: #1b1a1a;
-    height: 63rem;
+    height: 57rem;
     width: 100%;
     /* display: flex;
     flex-direction: row;
