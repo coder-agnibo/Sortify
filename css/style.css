@@ -540,13 +540,7 @@ body{
     top: -12.9rem;
     left: 18.2rem;
 }
-/* 
-.bottom-bar{
-    position: relative;
-    top: -16.5rem;
-    width: 120rem;
-    height: 5rem;
-} */
+
 
 .text-in-sorts{
 position: relative;
@@ -657,7 +651,7 @@ top: -2.2rem;
 
 .settings-bar-1{
     position: absolute;
-    height: 63rem;
+    height: 63.5rem;
     width: 27rem;
     background-color: #424fff;
     /* border-left: 1px solid white; */
@@ -672,7 +666,7 @@ top: -2.2rem;
 
 .settings-bar{
     position: absolute;
-    height: 63rem;
+    height: 63.5rem;
     width: 27rem;
     background-color: #424fff;
     /* border-left: 1px solid white; */
