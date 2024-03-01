@@ -35,9 +35,6 @@ nav:hover {
 
 
 
-
-
-
 /* Styling for the Navbar */
 .version{
     color: #fff;
@@ -48,6 +45,9 @@ nav:hover {
 
 .version:hover{
     color: #4ed096;
+    font-size: large;
+    position: absolute;
+    left: 20px;
 }
 
 nav img {
@@ -525,14 +525,14 @@ input[type="range"]:focus::-ms-thumb {
 
 body{
     width: 100%;
-    height: 1080px;
+    height: 100vh;
     overflow: hidden;
 }
 
-.image-cont{
+.image-cont img{
     position: relative;
     left: -21rem;
-}
+} 
 
 
 .bars-container{
@@ -695,6 +695,20 @@ top: -2.2rem;
     
     overflow: hidden;
     /* transform: rotateX(180deg); */
+}
+
+.version{
+        color: #fff;
+        font-size: large;
+        position: absolute;
+        left: 20px;
     }
 
+.version:hover{
+        color: #4ed096;
+        font-size: large;
+        position: absolute;
+        left: 20px;
+}
+    
 }
