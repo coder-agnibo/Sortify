@@ -501,11 +501,11 @@ input[type="range"]:focus::-ms-thumb {
     overflow: hidden;
   }
   .bottom-bar {
-    height: 6.5vh;
+    height: 7vh;
   }
 
   nav {
-    height: 8.5vh;
+    height: 8vh;
   }
 
   .image-cont img {
