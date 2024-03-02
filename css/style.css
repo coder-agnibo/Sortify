@@ -687,7 +687,7 @@ top: -2.2rem;
 .middle-container{
 
     background-color: #1b1a1a;
-    height: 84vh;
+    height: 85vh;
     width: 100%;
     /* display: flex;
     flex-direction: row;
@@ -716,4 +716,12 @@ top: -2.2rem;
         left: 20px;
 }
     
+.bottom-bar{
+    height: 6.5vh;
+}
+
+nav{
+    height: 8.5vh;
+}
+
 }
