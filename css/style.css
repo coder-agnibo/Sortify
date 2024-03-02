@@ -679,7 +679,7 @@ input[type="range"]:focus::-ms-thumb {
     justify-content: center;
     align-items: end;
     position: relative;
-    left: 24rem;
+    left: 18rem;
   }
 
   .version {
