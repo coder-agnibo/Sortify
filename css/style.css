@@ -513,11 +513,11 @@ input[type="range"]:focus::-ms-thumb {
     left: -21rem;
   }
 
-  .bars-container {
+  /* .bars-container {
     position: relative;
     top: -12.9rem;
     left: 18.2rem;
-  }
+  } */
 
   .text-in-sorts {
     position: relative;
