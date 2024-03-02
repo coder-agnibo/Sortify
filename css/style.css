@@ -674,6 +674,12 @@ input[type="range"]:focus::-ms-thumb {
 
   .bars-container {
     height: 83.5vh;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    left: 24rem;
   }
 
   .version {
