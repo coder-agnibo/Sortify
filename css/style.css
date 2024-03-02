@@ -137,7 +137,7 @@ flex-grow: 3; */
 }
 
 .bars-container {
-  height: 70.6rem;
+  height: 84vh;
   width: 70%;
 
   display: flex;
@@ -670,6 +670,10 @@ input[type="range"]:focus::-ms-thumb {
 
     overflow: hidden;
     /* transform: rotateX(180deg); */
+  }
+
+  .bars-container {
+    height: 83.5vh;
   }
 
   .version {
