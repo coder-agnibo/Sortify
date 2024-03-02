@@ -593,7 +593,7 @@ input[type="range"]:focus::-ms-thumb {
     flex-direction: column;
 
     position: absolute;
-    top: -37rem;
+    top: 20rem;
     left: 6rem;
 
     border: 2px white solid;
@@ -615,7 +615,7 @@ input[type="range"]:focus::-ms-thumb {
     flex-direction: column;
 
     position: absolute;
-    top: -37rem;
+    top: 20rem;
     left: -12rem;
 
     border: 2px white solid;
