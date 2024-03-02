@@ -594,7 +594,7 @@ input[type="range"]:focus::-ms-thumb {
 
     position: absolute;
     top: -37rem;
-    left: -0.1rem;
+    left: 6rem;
 
     border: 2px white solid;
 
